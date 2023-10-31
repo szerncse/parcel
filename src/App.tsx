@@ -273,11 +273,10 @@ const postListName :string[] = ["상품인수", "상품이동중", "배송지도
       </div>
 
     }
-    <div className={`${themeColor[theme].back} p-5 text-black 
-    text-sm md:text-xl xl:text-2xl flex justfy-between`}>
+    <div className={`${themeColor[theme].back} p-5 text-black text-sm md:text-xl xl:text-2xl flex justify-between`}>
    <h3 className='font-extrabold'>국내,외 택배조회 시스템</h3>
     <div>
-      <span>테마 :</span>
+      <span className=' text-white'>테마 :</span>
       {
         buttons.map((e,i)=>{
           return(
