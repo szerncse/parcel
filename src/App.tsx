@@ -14,22 +14,22 @@ interface trackingDetail{
   time: number;
   timeString: number;
   where: string;
-  code: null;
-  remark: null;
+  code: string | null;
+  remark: string;
   // code - 스트링 or null / remark - string dr - null
 }
 
 interface PackageData{
   "adUrl": string,
-  "complete": true,
+  "complete": boolean,
   "invoiceNo": number,
-  "itemImage": "",
+  "itemImage": string,
   "itemName": string,
   "level": number,
-  "receiverAddr": "",
-  "receiverName": "",
-  "recipient": "",
-  "result": number,
+  "receiverAddr": string,
+  "receiverName": string,
+  "recipient": string,
+  "result": string,
   "senderName": string,
   "trackingDetails": trackingDetail[],
   "orderNumber": string | null,
@@ -39,7 +39,7 @@ interface PackageData{
   "lastDetail": trackingDetail,
   "lastStateDetail": trackingDetail,
   "firstDetail" : trackingDetail,
-  "completeYN": ""
+  "completeYN": string
 }
 
 interface Company {
