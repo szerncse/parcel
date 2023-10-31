@@ -5,32 +5,32 @@ import { data } from 'autoprefixer';
 import { error } from 'console';
 
 interface trackingDetail{
-  kind: "string";
+  kind: string;
   level: number;
-  manName: "string";
-  manPic: "string";
-  telno: "string";
-  telno2: "string";
-  time: "number";
-  timeString: "number";
-  where: "string";
+  manName: string;
+  manPic: string;
+  telno: string;
+  telno2: string;
+  time: number;
+  timeString: number;
+  where: string;
   code: null;
   remark: null;
   // code - 스트링 or null / remark - string dr - null
 }
 
 interface PackageData{
-  "adUrl": "string",
+  "adUrl": string,
   "complete": true,
-  "invoiceNo": "number",
+  "invoiceNo": number,
   "itemImage": "",
-  "itemName": "MG2304PT02OTXS",
-  "level": 6,
+  "itemName": string,
+  "level": number,
   "receiverAddr": "",
   "receiverName": "",
   "recipient": "",
-  "result": "number",
-  "senderName": "string",
+  "result": number,
+  "senderName": string,
   "trackingDetails": trackingDetail[],
   "orderNumber": string | null,
   "estimate": string | null,
